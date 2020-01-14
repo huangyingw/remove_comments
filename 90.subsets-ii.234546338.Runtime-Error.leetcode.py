@@ -1,6 +1,3 @@
-"""
-这题与78#Subsets的唯一区别是input可以有重复的数字
-"""
 class Solution1:
     def subsetsWithDup(self, nums):
         from itertools import combinations
