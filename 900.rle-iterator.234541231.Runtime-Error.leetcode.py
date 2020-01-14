@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/rle-iterator/
 """
 Write an iterator that iterates through a run-length encoded sequence.
 The iterator is initialized by RLEIterator(int[] A), where A is a run-length encoding of some sequence.  More specifically, for all even i, A[i] tells us the number of times that the non-negative integer value A[i+1] is repeated in the sequence.
@@ -23,20 +22,10 @@ A.length is an even integer.
 There are at most 1000 calls to RLEIterator.next(int n) per test case.
 Each call to RLEIterator.next(int n) will have 1 <= n <= 10^9.
 """
-
-
 class RLEIterrator():
     def __init__(self, A):
-        """
-        :type A: List[int]
-        """
         self.inputList = A
-
     def next(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
         index = 0
         while index < len(self.inputList):
             if self.inputList[index] == 0:

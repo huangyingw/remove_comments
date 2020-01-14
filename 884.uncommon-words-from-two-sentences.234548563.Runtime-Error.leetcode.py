@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/uncommon-words-from-two-sentences/description/
 """
 We are given two sentences A and B.  (A sentence is a string of space separated words.  Each word consists only of lowercase letters.)
 A word is uncommon if it appears exactly once in one of the sentences, and does not appear in the other sentence.
@@ -15,24 +14,11 @@ Note:
 0 <= B.length <= 200
 A and B both contain only spaces and lowercase letters.
 """
-
-
 class Solution:
-    # 1
-    # 98.39%
-    # 使用Counter
     def uncommonFromSentences1(self, A, B):
-        """
-        :type A: str
-        :type B: str
-        :rtype: List[str]
-        """
         from collections import Counter
         mapping = Counter(A.split() + B.split())
         return [m[0] for m in mapping.items() if m[1] == 1]
-    # 2
-    # 使用原生dict
-
     def uncommonFromSentences2(self, A, B):
         count = {}
         for word in A.split():
