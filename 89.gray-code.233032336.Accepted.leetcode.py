@@ -5,5 +5,3 @@ class Solution(object):
             for j in reversed(range(len(res))):
                 res.append(res[j] + (1 << i))
         return res
-if __name__ == "__main__":
-    s = Solution()

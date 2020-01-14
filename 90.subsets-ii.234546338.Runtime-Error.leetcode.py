@@ -23,5 +23,3 @@ class Solution2:
                 if i != start_index and nums[i - 1] == nums[i]:
                     continue
                 queue.append((subset + [nums[i]], i + 1))
-if __name__ == '__main__':
-    t = Solution()
