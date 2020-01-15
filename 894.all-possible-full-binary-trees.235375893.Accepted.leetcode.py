@@ -1,6 +1,7 @@
 class Solution(object):
     def allPossibleFBT(self, N):
         memo = {}
+
         def helper(n):
             if n % 2 == 0:
                 return []

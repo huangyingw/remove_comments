@@ -6,6 +6,7 @@ class Solution:
         for i in set(A):
             if i - diff // 2 in set(B):
                 return [i, i - diff // 2]
+
     def fairCandySwap(self, A, B):
         sb = set(B)
         diff = (sum(B) - sum(A)) // 2

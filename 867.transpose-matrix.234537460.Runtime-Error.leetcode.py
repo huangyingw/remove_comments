@@ -7,6 +7,7 @@ class Solution:
                 temp.append(A[r][c])
             trans.append(temp)
         return trans
+
     def transpose(self, A):
         M, N = len(A), len(A[0])
         trans = [[None for m in range(M)] for n in range(N)]

@@ -18,6 +18,7 @@ class Solution:
                 else:
                     care, dont = 0, dont + care
         return dont + care
+
     def numDecodings2(self, s):
         v, w, p = 0, int(s > ''), ''
         for d in s:

@@ -1,5 +1,7 @@
 from math import ceil, log
 from collections import Counter
+
+
 class Solution(object):
     def reorderedPowerOf2(self, N):
         digit_count = Counter(str(N))

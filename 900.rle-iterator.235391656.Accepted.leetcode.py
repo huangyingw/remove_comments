@@ -3,6 +3,7 @@ class RLEIterator(object):
         self.encoding = A
         self.length = len(A)
         self.i = 0
+
     def next(self, n):
         while self.i < self.length and self.encoding[self.i] < n:
             n -= self.encoding[self.i]

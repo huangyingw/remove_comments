@@ -3,6 +3,7 @@ class Solution(object):
         L_sqrt = int(int(L) ** 0.5)
         R_sqrt = int((int(R) + 1) ** 0.5)
         digits = [str(i) for i in range(10)]
+
         def is_palindrome(i):
             return str(i) == str(i)[::-1]
         prev_palis, palis = [""], digits[:]

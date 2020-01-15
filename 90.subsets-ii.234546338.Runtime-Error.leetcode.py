@@ -8,12 +8,15 @@ class Solution1:
             for j in combinations(nums, i):
                 res.add(j)
         return list(res)
+
+
 class Solution2:
     def subsetsWithDup(self, nums):
         results = []
         nums.sort()
         self.bfs(nums, results)
         return results
+
     def bfs(self, nums, results):
         queue = [([], 0)]
         while queue:
